@@ -9,7 +9,7 @@ public class ConectorApi {
     public String buscarTaxasDeCambio (String moedaBase) {
 
         String apiKey = "eeac7258bbc56c5f18c92da4";
-        URI endereco = URI.create(" https://v6.exchangerate-api.com/v6/" + apiKey + "/latest/" + moedaBase);
+        URI endereco = URI.create("https://v6.exchangerate-api.com/v6/" + apiKey + "/latest/" + moedaBase);
 
         HttpClient client = HttpClient.newHttpClient();
         HttpRequest request = HttpRequest.newBuilder().uri(endereco).build();
